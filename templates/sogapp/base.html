@@ -1,0 +1,92 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+   <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Bhaina|Bangers|Concert+One|Lato|Lobster|Pacifico|Righteous|Shrikhand" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+{% block styles %}
+  <link href="{% static "sogapp/css/sog.css" %}" rel="stylesheet">
+{% endblock styles %}
+
+
+
+{% block title %}
+	<title></title>
+{% endblock %}
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand"href={% url "index" %}>SOG Records</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href={% url 'index' %}>Home</a></li>
+        <li><a href={% url 'sogapp:recording_artist_view' %}>Recording Artists</a></li>
+        <li><a href={% url 'sogapp:music_release' %}>Music Release</a></li>
+        <li><a href={% url "sogapp:upcommingshows" %}>Shows</a></li>
+        <li ><a href={% url "sogapp:contact_view" %}>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+{% block content %}
+
+  {% include 'sogapp/backgroundslideshow/slideshow.html' %}
+
+
+  {% include 'sogapp/carousel/carousel.html' %}
+
+  {% include 'sogapp/intro.html' %}
+
+{% include 'sogapp/footer/footer.html' %}
+{% endblock %}
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="{% static "js/jquerycircleplugin.js" %}"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+  $('#slideshow').cycle({
+  fx: 'fade',
+  pager: '#smallnav',
+  pause:   1,
+  speed: 1800,
+  timeout:  3500
+  });
+});
+
+  
+</script>
+
+<script type="text/javascript">
+  $(function(){
+  $('.carousel').carousel({
+    interval: 4000
+});
+
+})
+
+</script>
+</body>
+</html>

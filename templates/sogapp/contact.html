@@ -1,0 +1,60 @@
+
+{% extends 'sogapp/base.html' %}
+{% load static %}
+{% block title %}
+<title>Contact Page</title>
+{% endblock %}
+{% load crispy_forms_tags %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static "sogapp/css/contact.css" %}">
+{% endblock %}
+
+
+{% block content %}
+ 
+<!-- End of Navigation -->
+  <div class="intro-block">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-lg-8 col-sm-12">
+          <h1>SOG Records Empire <span class="text-muted">&raquo; Contact Us</span>
+          </h1>
+          <p class="lead intro">Do you want to know more about SOG Records Empire and how we can help take your career and music to the next level? Don't hesistate to send us information by filling out our contact form below. Are you looking for a management that will put career first in everything that we do? If your answer is yes, then wait no more because SOG Record Empire is here to make your dreams come true.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4">
+        <img class="img-responsive img-circle" src="{% static "images/SOGLOGO.jpg" %}">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map" style="width:350; ">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6771911294654!2d-10.801062584621693!3d6.306074327400786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf09f81d4b7be221%3A0x9279760aa34e25b4!2sCamp+Johnson+Rd%2C+Monrovia%2C+Liberia!5e0!3m2!1sen!2sus!4v1496200422529"
+
+    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <!-- End Intro Text-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2><strong>Get in touch</strong></h2><hr>
+        <p class="intro">Want to learn more about the exciting opportunities we have at SOG Records Empire. If you have any questions, contact us and we'll be glade to anwer them.
+        Get in touch my filling the below the form. We get back to you within the next 24hrs. <strong>SOG Records</strong> wants to hear for you: </p>
+          <form method="POST" class="contact_form">
+                   {% csrf_token %}
+          {{form|crispy}}
+          <input class="btn btn-primary btn-lg" type="submit" name="" value="send message">
+          <br><br>
+        </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+{% include 'sogapp/footer/footer.html' %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static "js/contact.js" %}"></script>
+{% endblock %}
