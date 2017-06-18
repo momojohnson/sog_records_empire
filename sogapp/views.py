@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from . forms import UserContactForm
+from .models import ArtistInfo
 
 # Create your views here.
 
@@ -9,7 +10,8 @@ def index(request):
 
 
 def recording_artist_view(request):
-	return render(request, "sogapp/recording_artist.html")
+	artist_info = ArtistInfo.objects.all()
+	return render(request, "sogapp/recording_artist.html", {"artist_info": artist_info})
 
 
 def music_release(request):

@@ -3,34 +3,32 @@
 {% block title %}
 <title>Recording Artist</title>
 {% endblock %}
-
-
 {% block content %}
 {% include 'sogapp/backgroundslideshow/slideshow.html' %}
-<div class="container" style="padding-top: 50px; color: white;">
-<h1>Artists</h1>
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	<div class="thumbnail myimage">
-		<img class="img-responsive" src={% static "images/CIC1.jpg" %}>
-		<div class="caption">
-		<h3 class="artist_name">Maurice Terziq Gayflor aka CIC</h3>		
+<div class="container t_padding">
+	<h1>Recording Artists</h1>
+	<div class="row"style="display: flex; flex-wrap: wrap">
+	  {% for artist in artist_info %}
+		<div class="col-xs-12 col-lg-4 col-md-4 col-sm-4">
+			<div class="thumbnail enlarge">
+      <img src="{{artist.artist_photo1_url}}" alt="{{artist.first_name}}">
+      <div class="caption">
+        <h3>Name: {{artist.first_name}} {{artist.last_name}}</h3>
+        <p>{{artist.artist_bio|truncatechars:100}}</p>
+        <p><a href="#" class="btn btn-primary btn-lg" role="button">Read Artist Profile</a></p>
+      </div>
+    	</div>
+		</div>
+		{% endfor %}
 	</div>
-	</div>			
-	</div>
-	<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
-		<div class="thumbnail myimage">
-		<img class="img-responsive" src="http://res.cloudinary.com/dypjectne/image/upload/v1496462760/Jaredo_znoe7j.jpg">
-		<div class="caption">
-		<h3 class="artist_name">Jaredo</h3>
-		
-	</div>
-	</div>			
-	</div>
-	
-	
-</div>
-</div>
-{% include 'sogapp/footer/footer.html' %}
 
-{% endblock %}
+	{% include 'sogapp/footer/footer.html' %}
+</div>
+
+
+
+
+
+
+
+	{% endblock %}
