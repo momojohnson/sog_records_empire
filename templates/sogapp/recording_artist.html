@@ -15,7 +15,7 @@
       <div class="caption">
         <h3>Name: {{artist.first_name}} {{artist.last_name}}</h3>
         <p>{{artist.artist_bio|truncatechars:100}}</p>
-        <p><a href="#" class="btn btn-primary btn-lg" role="button">Read Artist Profile</a></p>
+        <p><a href="{% url 'sogapp:artist_details' pk=artist.pk %}" class="btn btn-primary btn-lg" role="button">Read Artist Profile</a></p>
       </div>
     	</div>
 		</div>
@@ -24,11 +24,4 @@
 
 	{% include 'sogapp/footer/footer.html' %}
 </div>
-
-
-
-
-
-
-
-	{% endblock %}
+{% endblock %}

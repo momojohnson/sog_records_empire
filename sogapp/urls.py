@@ -9,5 +9,6 @@ urlpatterns =[
 	url(r'^music/shows/$', views.upcommingshows, name="upcommingshows"),
 	url(r'^music/contact/page/$', views.contact_view, name="contact_view"),
 	url(r'^music/thanks/page/$', views.thanks_view, name="thanks_view"),
+	url(r'^music/artist/profile/(?P<pk>\d+)/$', views.artist_details, name="artist_details")
 
 ]

@@ -16,6 +16,7 @@ h1, h2, h3, h4{
 }
 
 
+
 /*.navbar-inverse {
   background: gray !important;
   background-size: cover;
@@ -48,7 +49,7 @@ margin-top: 10px;
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {color: black; background-color:white;
 border-radius: 5px;
-font-size: 2em;}
+font-size: 1.5em;}
 
 @media only screen and (max-width: 766px) {
 .collapsing, .in {background-color:  rgb(64, 64, 64);
@@ -157,7 +158,20 @@ p.lead{
 }
 
 .enlarge:hover{
-  width: 400px;
+  width: 350px;
   font-size: 1.5em;
 
+}
+/*Artist details pay*/
+.artist_bio h3{
+  color: white;
+  font-size: 3em;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+.artist_bio p{
+  font-size: 1.5em;
+  text-align: justify;
+  font-family: 'Russo One', sans-serif;
 }

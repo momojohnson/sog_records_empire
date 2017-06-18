@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from . forms import UserContactForm
 from .models import ArtistInfo
 
@@ -17,14 +17,9 @@ def recording_artist_view(request):
 def music_release(request):
 	return render(request, "sogapp/music_release.html")
 
-
-
 def upcommingshows(request):
 
 	return render(request, "sogapp/shows.html")
-
-
-
 
 def contact_view(request):
     if request.method == "POST":
@@ -39,7 +34,10 @@ def contact_view(request):
         form = UserContactForm()
         return render(request, 'sogapp/contact.html', {'form':form})
 
-
-
 def thanks_view(request):
     return render(request, "sogapp/thanks.html")
+
+
+def artist_details(request, pk):
+	artist_info = get_object_or_404(ArtistInfo, pk=pk);
+	return render(request, 'sogapp/artist_detail_info.html', {"artist_info":artist_info})

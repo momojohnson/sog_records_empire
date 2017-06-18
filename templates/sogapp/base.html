@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 {% load staticfiles %}
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,18 +11,11 @@
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Boogaloo|Bowlby+One|Cherry+Cream+Soda|Days+One|Great+Vibes|Mogra|Pangolin|Permanent+Marker|Russo+One|Shrikhand" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
 {% block styles %}
-
   <link href="{% static "/css/sog.css" %}" rel="stylesheet">
-
 {% endblock styles %}
-
-
-
-
 {% block title %}
 	<title></title>
 {% endblock %}
-
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -47,8 +38,8 @@
       </ul>
     </div>
   </nav>
-<div class="padded">
 {% block content %}
+<div class="containter padded">
 
   {% include 'sogapp/backgroundslideshow/slideshow.html' %}
 
@@ -68,12 +59,13 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+
   <!-- <script type="text/javascript" src="{% static "js/jquerycircleplugin.js" %}"></script> -->
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="{% static "js/artist.js" %}"></script>
 <script>
 $(document).ready(function() {
   $('#slideshow').cycle({
@@ -92,7 +84,7 @@ $(document).ready(function() {
     interval: 4000
 });
 
-})
+});
 
 </script>
 

@@ -15,10 +15,10 @@ hr {
     color: white; /* old IE */
     background-color: white; /* Modern Browsers */
 }
-img.img-circle{
+/*img.img-circle{
   height: 350px;
   width: 450px;
-}
+}*/
 p.text-center{
   color: white;
   margin-top: 20px;
