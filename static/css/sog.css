@@ -1,0 +1,117 @@
+body {
+    padding-top: 25px;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Abel', sans-serif;
+}
+
+.navbar-default{
+  background-color: rgb(145, 105, 59);
+}
+/*Move carousel caption above image*/
+
+.carousel-caption{
+  z-index: 10;
+
+}
+
+/*.navbar-inverse {
+  background: gray !important;
+  background-size: cover;
+  border-bottom: blue !important;
+  height: 75px;
+  margin: 0 !important;
+
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white !important;
+    font-size: 1.4em;
+    font-family: "Cherry Cream Soda";
+    font-size: 1.5em;
+    margin-top: 6px;
+    width: 100%;
+    text-align: center;
+}*/
+
+.navbar {background-color: gray;
+height: 75px;}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand
+{color: white;
+font-size: 1.5em;
+font-family: "Cherry Cream Soda";
+margin-top: 10px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {color: black; background-color:white;
+border-radius: 10px;
+font-size: 2.5em;}
+
+@media only screen and (max-width: 766px) {
+.collapsing, .in {background-color: black;
+font-size: 1em;
+text-align: center;
+font-family: "Cherry Cream Soda";}
+.collapsing ul li a, .in ul li a {color: 	rgb(128, 32, 0)!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: white !important;}
+}
+/*Positioning of the carousel image*/
+.carousel-inner > .item > img{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+/* Formating the items within the carousel*/
+.carousel-inner > .item{
+  height: 500px;
+}
+.intro-block{
+  padding: 100px  0px 0px 0px ;
+  color: #fff;
+}
+
+p.lead{
+  font-size: 1.9em;
+  font-family: 'Days One', sans-serif;
+}
+
+.intro-block h1{
+  font-size: 2.8em;
+  font-family: 'Shrikhand', cursive;
+
+
+}
+
+/* Formating the items within the carousel*/
+@media (min-width: 768px) {
+  .carousel-inner > .item{
+    height: 700px;
+  }
+  .map{
+    height: 350px;
+  }
+
+}
+.bpad{
+  margin-bottom: 30px;
+}
+
+
+#slideshow, img.bgM {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-9999;
+}
+.text-muted{
+  color: white;
+  font-size:
+}

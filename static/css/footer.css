@@ -1,0 +1,61 @@
+.foot_er address, .foot_er a {
+  color: #fff;
+  font-size: 1.2em;
+font-family: 'Days One', sans-serif;
+}
+
+.foot_er h3 {
+  font-size: 1.8em;
+
+}
+hr {
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: white; /* old IE */
+    background-color: white; /* Modern Browsers */
+}
+img.img-circle{
+  height: 350px;
+  width: 450px;
+}
+p.text-center{
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4em;
+}
+.space{
+  margin-top: 40px;
+}
+.social h2{
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-size: bold;
+  font-family: 'Mogra', cursive;
+}
+
+.social a{
+  padding: 10px;
+  font-size: 1.5em;
+}
+a.facebook{
+  color: rgb(59,89,152);
+}
+a.youtube{
+  color: red;
+}
+a.instagram{
+  color: rgb(251, 173, 80);
+}
+a.twitter{
+  color: rgb(0, 172, 237);
+}
+blockquote{
+  color: white;
+  font-size: 1.6em;
+  text-align: justify;
+  word-spacing: -0.25em;
+  font-family: 'Pangolin', cursive
+}

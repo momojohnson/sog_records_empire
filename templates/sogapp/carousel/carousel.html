@@ -1,5 +1,11 @@
 {% load staticfiles %}
+
 <!-- End of Navigation -->
+{% block styles %}
+  <link href="{% static "sogapp/css/carousel.css" %}" rel="stylesheet">
+{% endblock styles %}
+
+</style>
   <div id="myCarousel" class="carousel slide">
     <ol class="carousel-indicators">
       <li data-target='#myCarousel' data-slide-to="0" li>
@@ -12,11 +18,7 @@
         <div class="container active">
           <div class="carousel-caption">
             <h1>CIC Craloboi</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-             
+            <p class="artist_intro">C.I.C (Commander In Chief) birth name Maurice Terziq Gayflor is a Liberian Kolo-pop Artiste.</p>
           </div>
         </div>
       </div>
@@ -25,11 +27,8 @@
         <div class="container active">
           <div class="carousel-caption">
             <h1>CIC Craloboi</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              
+            <p class="artist_intro">C.I.C (Commander In Chief) birth name Maurice Terziq Gayflor is a Liberian Kolo-pop Artist.</p>
+
           </div>
         </div>
       </div>
@@ -38,11 +37,8 @@
         <div class="container active">
           <div class="carousel-caption">
             <h1>Jaredo</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            
+            <p class="artist_intro">Afro-pop Singer and Rapper.</p>
+
           </div>
         </div>
       </div>
@@ -50,5 +46,6 @@
     <a href="#myCarousel" class="left carousel-control" data-slide='prev'><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a href="#myCarousel" class="right carousel-control" data-slide='next'><span class="glyphicon glyphicon-chevron-right"></span></a>
   </div>
+  
 
   <!-- Carousel End -->
