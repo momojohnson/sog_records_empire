@@ -170,3 +170,46 @@ p.lead{
   text-align: justify;
   font-family: 'Russo One', sans-serif;
 }
+/*Music release*/
+.music_release h1{
+  margin-top: 100px;
+  color: white;
+  font-family: 'Boogaloo', cursive;
+  font-size: 4em;
+
+}
+
+
+.caption h4{
+  font-size: 2em;
+  color: white;
+  padding-top: 20px;
+}
+
+/*Contact Page*/
+
+p.lead{
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.get_in_touch p{
+  font-size: 2em;
+  text-align: justify;
+  font-family: 'Mogra', cursive;
+
+}
+
+.get_in_touch h2{
+  color: white;
+  font-size: 3.5em;
+  font-family: 'Cherry Cream Soda', cursive;
+}
+
+#div_id_first_name label,#div_id_last_name label, #div_id_email label, #div_id_message label {
+  color: white;
+  font-size: 2em;
+  font-family: 'Mogra', cursive;
+  padding-top: 5px;
+
+}

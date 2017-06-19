@@ -5,9 +5,6 @@
 <title>Contact Page</title>
 {% endblock %}
 {% load crispy_forms_tags %}
-{% block styles %}
-<link rel="stylesheet" type="text/css" href="{% static "css/contact.css" %}">
-{% endblock %}
 
 
 {% block content %}
@@ -17,7 +14,7 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-xs-12 col-md-8 col-lg-8 col-sm-12">
+        <div class="col-xs-12 col-md-8 col-lg-8 col-sm-12 contact">
           <h1>SOG Records Empire <span class="text-muted">&raquo; Contact Us</span>
           </h1>
           <p class="lead intro">Do you want to know more about SOG Records Empire and how we can help take your career and music to the next level? Don't hesistate to send us information by filling out our contact form below. Are you looking for a management that will put career first in everything that we do? If your answer is yes, then wait no more because SOG Record Empire is here to make your dreams come true.</p>
@@ -39,10 +36,10 @@
   <!-- End Intro Text-->
   <div class="container">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-12 get_in_touch">
         <h2><strong>Get in touch</strong></h2><hr>
-        <p class="intro">Want to learn more about the exciting opportunities we have at SOG Records Empire. If you have any questions, contact us and we'll be glade to anwer them.
-        Get in touch my filling the below the form. We get back to you within the next 24hrs. <strong>SOG Records</strong> wants to hear for you: </p>
+        <p class="intro">Want to learn more about the exciting opportunities we have at SOG Records Empire. If you have any questions, contact us and we'll be glad to anwer them.
+        Get in touch my filling out the below form. We get back to you within the next 24hrs. <strong>SOG Records</strong> wants to hear for you: </p>
           <form method="POST" class="contact_form">
                    {% csrf_token %}
           {{form|crispy}}
@@ -54,13 +51,14 @@
     </div>
 
   </div>
+
 {% include 'sogapp/footer/footer.html' %}
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static "js/contact.js" %}"></script>
-  
+
+  {% include 'sogapp/backgroundslideshow/slideshow.html' %}
 
 {% endblock %}
