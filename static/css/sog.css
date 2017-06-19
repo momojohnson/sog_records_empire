@@ -60,11 +60,11 @@ font-family: "Cherry Cream Soda";}
   top: 50px;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 /* Formating the items within the carousel*/
 .carousel-inner > .item{
-  height: 500px;
+  height: 800px;
 }
 .intro-block{
   padding: 100px  0px 0px 0px ;
