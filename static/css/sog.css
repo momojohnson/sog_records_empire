@@ -253,6 +253,14 @@ p.lead{
   color: #fff;
   font-family: 'Days One', sans-serif;
 }
+
+hr {
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: white; /* old IE */
+    background-color: white; /* Modern Browsers */
+}
 }
 
 @media screen and (max-width: 387px){
