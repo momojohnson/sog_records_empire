@@ -1,5 +1,6 @@
 h1, h2, h3, h4{
   font-family: 'Abel', sans-serif;
+
 }
 
 .navbar-default{
@@ -59,14 +60,13 @@ font-family: "Cherry Cream Soda";}
 }
 
 p.lead{
-  font-size: 1.9em;
+  font-size: 1.9vw;
   font-family: 'Days One', sans-serif;
 }
 
 .intro-block h1{
-  font-size: 3.3em;
+  font-size: 2.9vw;
   font-family: 'Great Vibes', cursive;
-
 
 }
 
@@ -84,7 +84,7 @@ p.lead{
   margin-bottom: 30px;
 }
 
-
+ /*Background slideshow for this website*/
 #slideshow, img.bgM {
   min-height: 100%;
   min-width: 1024%;
@@ -95,6 +95,8 @@ p.lead{
   left: 0;
   z-index:-9999;
 }
+
+/*text muted class*/
 .text-muted{
   color: white;
   font-size:
@@ -107,12 +109,12 @@ p.lead{
 .t_padding h1{
   color: white;
   font-family: 'Permanent Marker', cursive;
-  font-size: 3.5em;
+  font-size: 3.5vw;
 }
 
 
 .caption p{
-  font-size: 1em;
+  font-size: 1vw;
   font-family: 'Russo One', sans-serif;
 }
 
@@ -141,19 +143,19 @@ p.lead{
 
 .enlarge:hover{
   width: 350px;
-  font-size: 1.5em;
+  font-size: 1.5vw;
 
 }
 /*Artist details pay*/
 .artist_bio h3{
   color: white;
-  font-size: 3em;
+  font-size: 3vw;
   font-family: 'Permanent Marker', cursive;
 
 }
 
 .artist_bio p{
-  font-size: 1.5em;
+  font-size: 1.5vw;
   text-align: justify;
   font-family: 'Russo One', sans-serif;
 }
@@ -162,13 +164,13 @@ p.lead{
   margin-top: 100px;
   color: white;
   font-family: 'Boogaloo', cursive;
-  font-size: 4em;
+  font-size: 4vw;
 
 }
 
 
 .caption h4{
-  font-size: 2em;
+  font-size: 2vw;
   color: white;
   padding-top: 20px;
 }
@@ -181,7 +183,7 @@ p.lead{
 }
 
 .get_in_touch p{
-  font-size: 2em;
+  font-size: 2vw;
   text-align: justify;
   font-family: 'Mogra', cursive;
 
@@ -189,14 +191,22 @@ p.lead{
 
 .get_in_touch h2{
   color: white;
-  font-size: 3.5em;
+  font-size: 3.5vw;
   font-family: 'Cherry Cream Soda', cursive;
 }
 
 #div_id_first_name label,#div_id_last_name label, #div_id_email label, #div_id_message label {
   color: white;
-  font-size: 2em;
+  font-size: 2vw;
   font-family: 'Mogra', cursive;
   padding-top: 5px;
 
+}
+
+/* Media query setting*/
+@media (max-width: @screen-xs) {
+  p.lead{
+    font-size: 0.1em;
+    font-family: none;
+  }
 }

@@ -1,11 +1,11 @@
 .foot_er address, .foot_er a {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.2vw;
 font-family: 'Days One', sans-serif;
 }
 
 .foot_er h3 {
-  font-size: 1.8em;
+  font-size: 1.8vw;
 
 }
 hr {
@@ -23,7 +23,7 @@ p.text-center{
   color: white;
   margin-top: 20px;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.4vw;
 }
 .space{
   margin-top: 40px;
@@ -31,14 +31,14 @@ p.text-center{
 .social h2{
   color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 3vw;
   font-size: bold;
   font-family: 'Mogra', cursive;
 }
 
 .social a{
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 a.facebook{
   color: rgb(59,89,152);
@@ -54,7 +54,7 @@ a.twitter{
 }
 blockquote{
   color: white;
-  font-size: 1.6em;
+  font-size: 1.6vw;
   text-align: justify;
   word-spacing: -0.25em;
   font-family: 'Pangolin', cursive
