@@ -28,10 +28,10 @@ p.text-center{
   font-family: 'Mogra', cursive;
 }*/
 
-/*.social a{
+.social a{
   padding: 10px;
   /*font-size: 1.5vw;*/
-/*}*/
+}
 a.facebook{
   color: rgb(59,89,152);
 }
