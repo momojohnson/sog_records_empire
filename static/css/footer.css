@@ -1,13 +1,12 @@
 .foot_er address, .foot_er a {
   color: #fff;
-  font-size: 1.2vw;
-font-family: 'Days One', sans-serif;
+  font-family: 'Days One', sans-serif;
 }
 
-.foot_er h3 {
+/*.foot_er h3 {
   font-size: 1.8vw;
 
-}
+}*/
 hr {
     border: none;
     height: 5px;
@@ -21,24 +20,23 @@ hr {
 }*/
 p.text-center{
   color: white;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   text-align: center;
-  font-size: 1.4vw;
+  /*font-size: 1.4vw;*/
 }
-.space{
+/*.space{
   margin-top: 40px;
-}
-.social h2{
+}*/
+/*.social h2{
   color: white;
   text-align: center;
-  font-size: 3vw;
   font-size: bold;
   font-family: 'Mogra', cursive;
-}
+}*/
 
 .social a{
   padding: 10px;
-  font-size: 1.5vw;
+  /*font-size: 1.5vw;*/
 }
 a.facebook{
   color: rgb(59,89,152);
@@ -56,6 +54,6 @@ blockquote{
   color: white;
   font-size: 1.5em;
   text-align: justify;
-  word-spacing: -0.25em;
+  word-spacing: -0.5em;
   font-family: 'Pangolin', cursive
 }
