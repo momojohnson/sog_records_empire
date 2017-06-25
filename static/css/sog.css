@@ -84,9 +84,8 @@ font-family: "Cherry Cream Soda";}
   color: #fff;
 }
 
-p.lead{
-  /*font-size: 1.9vw;*/
-  font-family: 'Days One', sans-serif;
+p.introduction{
+    font-family: 'Days One', sans-serif;
 }
 
 .intro-block h1{
@@ -227,9 +226,62 @@ p.lead{
   padding-top: 5px;
 
 }
+
+
+
 @media screen and (min-width: 200px){
   html{
     font-size: 14px;
+  }
+  h1{
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .social h2{
+    color: white;
+    text-align: center;
+    font-size: bold;
+    font-family: 'Mogra', cursive;
+    font-size: 3em;
+  }
+  .foot_er h3 {
+    font-size: 1.4em;
+    margin-top: -25px;
+
+}
+
+blockquote{
+  color: white;
+  font-size: 1.6em;
+  text-align: justify;
+  word-spacing: -0.10;
+  font-family: 'Pangolin', cursive
+}
+
+.foot_er address, .foot_er a {
+  color: #fff;
+  font-family: 'Days One', sans-serif;
+  font-size: 1.1em;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: white; /* old IE */
+    background-color: white; /* Modern Browsers */
+}
+.social a{
+  font-size: 1.6em;
+    padding: 10px;
+}
+
+}
+
+@media screen and (max-width: 387px){
+  html{
+    font-size: 13px;
   }
   h1{
     font-size: 1.1em;
@@ -249,29 +301,23 @@ p.lead{
 
 }
 
+blockquote{
+  color: white;
+  font-size: 1.5em;
+  text-align: justify;
+  word-spacing: -0.10em;
+  font-family: 'Pangolin', cursive
+}
+
 .foot_er address, .foot_er a {
   color: #fff;
   font-family: 'Days One', sans-serif;
 }
 
-hr {
-    border: none;
-    height: 5px;
-    /* Set the hr color */
-    color: white; /* old IE */
-    background-color: white; /* Modern Browsers */
+.social a{
+  padding: 10px;
+  font-size: 1.2em;
 }
-}
-
-@media screen and (max-width: 387px){
-  html{
-    font-size: 13px;
-  }
-  h1{
-    font-size: 1.1em;
-    text-align: center;
-    padding-top: 10px;
-  }
 }
 
 @media screen and (min-width: 400px){
@@ -284,7 +330,27 @@ hr {
     padding-top: 10px;
 
   }
+  .social a{
+    padding: 10px;
+    font-size: 2.0em;
 
+  }
+  .social{
+    text-align: center;
+  }
+
+  blockquote{
+    color: white;
+    font-size: 2.0em;
+    text-align: justify;
+    word-spacing: 0.1em;
+    font-family: 'Pangolin', cursive
+  }
+
+  .foot_er address, .foot_er a {
+    color: #fff;
+    font-family: 'Days One', sans-serif;
+  }
 
 }
 @media screen and (min-width: 501px){
@@ -297,6 +363,28 @@ hr {
     padding-top: 10px;
 
   }
+
+  .social a{
+    padding: 10px;
+    font-size: 1.1em;
+
+  }
+  .social{
+    text-align: center;
+  }
+
+  blockquote{
+    color: white;
+    font-size: 2.0em;
+    text-align: justify;
+    word-spacing: 0.1em;
+    font-family: 'Pangolin', cursive
+  }
+
+  .foot_er address, .foot_er a {
+    color: #fff;
+    font-family: 'Days One', sans-serif;
+  }
 }
 @media screen and (min-width: 620px){
   html{
@@ -308,22 +396,16 @@ hr {
     padding-top: 10px;
 
   }
-}
-/*@media screen and (min-width: 680px){
-  html{
-    font-size: 17px;
+  blockquote{
+    color: white;
+    font-size: 2.0em;
+    text-align: left;
+    word-spacing: 0.1em;
+    font-family: 'Pangolin', cursive
   }
+
+
 }
-@media screen and (min-width: 720px){
-  html{
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 800px){
-  html{
-    font-size: 19px;
-  }
-}*/
 @media screen and (min-width: 860px){
   html{
     font-size: 20px;
@@ -333,10 +415,32 @@ hr {
     font-family: 'Great Vibes', cursive;
 
   }
+
+  blockquote{
+    color: white;
+    font-size: 2.0em;
+    text-align: justify;
+    word-spacing: 0.1em;
+    font-family: 'Pangolin', cursive
+  }
+
 }
 @media screen and (min-width: 920px){
   html{
     font-size: 21px;
+  }
+  .social a{
+    padding: 10px;
+    font-size: 1.5em;
+
+  }
+
+  blockquote{
+    color: white;
+    font-size: 1.0em;
+    text-align: right;
+    word-spacing: 0.1em;
+    font-family: 'Pangolin', cursive
   }
 }
 @media screen and (min-width: 1000px){
