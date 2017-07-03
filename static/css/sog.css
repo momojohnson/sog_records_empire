@@ -13,7 +13,7 @@ h2{
   font-size: 2rem;
 }
 h3{
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h4{
@@ -229,31 +229,31 @@ p.lead{
 
 
 
-@media screen and (min-width: 200px){
+@media  (min-width: 200px){
   html{
-    font-size: 14px;
+    font-size: 2px;
   }
   h1{
-    font-size: 1.1em;
+    font-size: 5px;
     text-align: center;
     padding-top: 10px;
   }
   .social h2{
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: bold;
     font-family: 'Mogra', cursive;
-    font-size: 3em;
+    font-size: 1em;
   }
   .foot_er h3 {
-    font-size: 1.4em;
+    font-size: 0.5em;
     margin-top: -25px;
 
 }
 
 blockquote{
   color: white;
-  font-size: 1.6em;
+  font-size: 1em;
   text-align: justify;
   word-spacing: -0.10;
   font-family: 'Pangolin', cursive
@@ -281,19 +281,19 @@ hr {
 
 @media screen and (max-width: 387px){
   html{
-    font-size: 13px;
+    font-size: 0.7px;
   }
   h1{
-    font-size: 1.1em;
+    font-size: 0.2em;
     text-align: center;
     padding-top: 10px;
   }
   .social h2{
     color: white;
-    text-align: center;
-    font-size: bold;
+    text-align: left;
+
     font-family: 'Mogra', cursive;
-    font-size: 3em;
+    font-size: 0.5px;
   }
   .foot_er h3 {
     font-size: 1.5em;
