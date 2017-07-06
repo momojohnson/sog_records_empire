@@ -1,56 +1,70 @@
-/*h1, h2, h3, h4{
-  font-family: 'Abel', sans-serif;
+/*Global styles*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-}*/
-html{
-  font-size: 11px;
-}
-h1{
-  font-size: 2.0rem;
+
+
+html, body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    /*line-height: 1.7;*/
+    color: white;
 }
 
-h2{
-  font-size: 2rem;
-}
-h3{
-  font-size: 1.5em;
-}
-
-h4{
-  font-size: 1rem;
-}
-
-p{
-  font-size: 1.2rem;
-}
-
-.foot_er address, .foot_er a{
-  font-size: 1rem;
-}
-
-.navbar-default{
-  background-color: rgb(145, 105, 59);
-}
-/*Move carousel caption above image*/
-
-.carousel-caption{
-  z-index: 10;
-
-}
-.padded{
-  margin-top: 25px;
-}
 
 .navbar {background-color: rgb(64, 64, 64);
 height: 75px;
-border-bottom: black;}
+border-bottom: black;
+display: inline;}
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand
 {color: white;
-font-size: 1.2em;
+font-size: 1em;
 font-family: "Cherry Cream Soda";
-margin-top: 10px;
-display: block;
+margin-top: 13px;
+display: inline-block;
+
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {color: black; background-color:white;
@@ -60,10 +74,11 @@ font-size: 1.5em;}
 @media only screen and (max-width: 764px) {
 .collapsing, .in {background-color:  rgb(64, 64, 64);
 font-size: 1em;
-text-align: center;
+/*text-align: center;*/
 font-family: "Cherry Cream Soda";}
 .collapsing ul li a, .in ul li a {color: 	white !important;
   display: inline-flex;
+
 }
 .collapsing ul li a:hover, .in ul li a:hover {color:black !important;}
 }
@@ -79,20 +94,6 @@ font-family: "Cherry Cream Soda";}
 .carousel-inner > .item{
   height: 800px;
 }
-.intro-block{
-  padding: 100px  0px 0px 0px ;
-  color: #fff;
-}
-
-p.introduction{
-    font-family: 'Days One', sans-serif;
-}
-
-.intro-block h1{
-  /*font-size: 2.9vw;*/
-  font-family: 'Great Vibes', cursive;
-
-}
 
 /* Formating the items within the carousel*/
 @media (min-width: 768px) {
@@ -104,393 +105,151 @@ p.introduction{
   }
 
 }
-.bpad{
-  margin-bottom: 30px;
-}
 
- /*Background slideshow for this website*/
+/*Background slideshow for this website*/
 #slideshow, img.bgM {
-  min-height: 100%;
-  min-width: 1024%;
+ min-height: 100%;
+ min-width: 1024%;
+ width: 100%;
+ height: auto;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index:-9999;
+}
+
+/*Styling of intro section*/
+.tpad{
+  padding-top: 10px;
+}
+
+.intro-block{
   width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index:-9999;
 }
-
-/*text muted class*/
-.text-muted{
-  color: white;
-  font-size:
-}
-
-/* Artist Page Styling*/
-.t_padding{
-  margin-top: 85px;
-}
-.t_padding h1{
-  color: white;
-  font-family: 'Permanent Marker', cursive;
-  /*font-size: 3.5vw;*/
-}
-
-
-.caption p{
-  /*font-size: 1vw;*/
-  font-family: 'Russo One', sans-serif;
-}
-
-.caption .btn-primary:hover{
-  background:	rgb(255, 51, 0);
-  color: black;
-}
-
-.caption .btn-primary{
-  background:rgb(64, 64, 64);
-  color: white;
-}
-
-.caption .btn-primary:focus{
-  background:blue;
-}
-
-.enlarge{
-  background-color: transparent;
-
-}
-.enlarge h3, p{
-  color: white;
-
-}
-
-.enlarge:hover{
-  width: 350px;
-  font-size: 1.5vw;
-
-}
-/*Artist details pay*/
-.artist_bio h3{
-  color: white;
-  font-size: 3em;
-  font-family: 'Permanent Marker', cursive;
-
-}
-
-.artist_bio p{
-  /*font-size: 1.5vw;*/
+.intro-block  p{
+  font-size: 100%;
+  line-height: 1.5em;
   text-align: justify;
-  font-family: 'Russo One', sans-serif;
-}
-/*Music release*/
-.music_release h1{
-  margin-top: 100px;
-  color: white;
-  font-family: 'Boogaloo', cursive;
-  /*font-size: 4vw;*/
-
+  font-family: 'Permanent Marker', cursive;
 }
 
-
-.caption h4{
-  /*font-size: 2vw;*/
-  color: white;
-  padding-top: 20px;
+.intro-block h1{
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
 }
-
-/*Contact Page*/
-
-p.lead{
+span.text-muted{
+  text-transform: uppercase;
+}
+/*Footer styling*/
+.footer_text{
+  margin-top: 20px;
+  font-size: 1.4em;
+  line-height: 1.4em;
   text-align: justify;
+}
+.footer_text.social{
+  text-align: center;
+
+}
+.footer_text.social a{
+  padding: 7px;
+  font-size: 0.5em;
+}
+.footer_text.social h2{
+  font-size: 1.0em;
   padding-bottom: 20px;
+  font-weight: bold;
+}
+.footer_text footer{
+  text-align: center;
+}
+footer address h2{
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
-.get_in_touch p{
-  /*font-size: 2vw;*/
-  text-align: justify;
-  font-family: 'Mogra', cursive;
-
+/*Sytling artist page*/
+.top_padding{
+  padding-top: 100px;
 }
-
-.get_in_touch h2{
-  color: white;
-  font-size: 3.0em;
-  font-family: 'Cherry Cream Soda', cursive;
-}
-
-#div_id_first_name label,#div_id_last_name label, #div_id_email label, #div_id_message label {
-  color: white;
-  font-size: 2em;
-  font-family: 'Mogra', cursive;
-  padding-top: 5px;
-
-}
-
-
-
-@media  (min-width: 200px){
-  html{
-    font-size: 2px;
-  }
-  h1{
-    font-size: 5px;
-    text-align: center;
-    padding-top: 10px;
-  }
-  .social h2{
-    color: white;
-    text-align: left;
-    font-size: bold;
-    font-family: 'Mogra', cursive;
+/* Small devices (tablets, 768px and up) footer styling*/
+@media (min-width: 768px) {
+  .footer_text{
     font-size: 1em;
-  }
-  .foot_er h3 {
-    font-size: 0.5em;
-    margin-top: -25px;
-
-}
-
-blockquote{
-  color: white;
-  font-size: 1em;
-  text-align: justify;
-  word-spacing: -0.10;
-  font-family: 'Pangolin', cursive
-}
-
-.foot_er address, .foot_er a {
-  color: #fff;
-  font-family: 'Days One', sans-serif;
-  font-size: 1.1em;
-}
-
-hr {
-    border: none;
-    height: 5px;
-    /* Set the hr color */
-    color: white; /* old IE */
-    background-color: white; /* Modern Browsers */
-}
-.social a{
-  font-size: 1.6em;
-    padding: 10px;
-}
-
-}
-
-@media screen and (max-width: 387px){
-  html{
-    font-size: 0.7px;
-  }
-  h1{
-    font-size: 0.2em;
-    text-align: center;
-    padding-top: 10px;
-  }
-  .social h2{
-    color: white;
-    text-align: left;
-
-    font-family: 'Mogra', cursive;
-    font-size: 0.5px;
-  }
-  .foot_er h3 {
-    font-size: 1.5em;
-    margin-top: -25px;
-
-}
-
-blockquote{
-  color: white;
-  font-size: 1.5em;
-  text-align: justify;
-  word-spacing: -0.10em;
-  font-family: 'Pangolin', cursive
-}
-
-.foot_er address, .foot_er a {
-  color: #fff;
-  font-family: 'Days One', sans-serif;
-}
-
-.social a{
-  padding: 10px;
-  font-size: 1.2em;
-}
-}
-
-@media screen and (min-width: 400px){
-  html{
-    font-size: 16px;
-  }
-  .intro-block h1{
-    font-size: 1.4em;
-    font-family: 'Great Vibes', cursive;
-    padding-top: 10px;
-
-  }
-  .social a{
-    padding: 10px;
-    font-size: 2.0em;
-
-  }
-  .social{
-    text-align: center;
-  }
-
-  blockquote{
-    color: white;
-    font-size: 2.0em;
+    line-height: 1.5em;
     text-align: justify;
-    word-spacing: 0.1em;
-    font-family: 'Pangolin', cursive
-  }
+    margin-top: 5px;
 
-  .foot_er address, .foot_er a {
-    color: #fff;
-    font-family: 'Days One', sans-serif;
-  }
-
-}
-@media screen and (min-width: 501px){
-  html{
-    font-size: 15px;
   }
   .intro-block h1{
-    font-size: 1.8em;
-    font-family: 'Great Vibes', cursive;
-    padding-top: 10px;
-
-  }
-  .artist_bio h3{
-    color: white;
-    font-size: 3em;
-    font-family: 'Permanent Marker', cursive;
-
-  }
-  .social a{
-    padding: 10px;
-    font-size: 1.1em;
-
-  }
-  .social{
+    font-weight: bold;
+    font-size: 159%;
     text-align: center;
+    padding: 20px 0px 20px 0px;
+  }
+  .img-responsive.jaffar{
+    width: 60%;
+    margin: 0 auto;
   }
 
-  blockquote{
-    color: white;
-    font-size: 2.0em;
+  .copyright{
+    text-align: center;
+    padding-top: 3px;
+  }
+  .intro-block  p{
+    font-size: 125%;
+    line-height: 1.7em;
     text-align: justify;
-    word-spacing: 0.1em;
-    font-family: 'Pangolin', cursive
+     font-family: 'Permanent Marker', cursive;
   }
+ }
 
-  .foot_er address, .foot_er a {
-    color: #fff;
-    font-family: 'Days One', sans-serif;
-  }
-}
-@media screen and (min-width: 620px){
-  html{
-    font-size: 16px;
-  }
-  .intro-block h1{
-    font-size: 2.3em;
-    font-family: 'Great Vibes', cursive;
-    padding-top: 10px;
+ /* Medium devices (desktops, 992px and up)  styling*/
+ @media (min-width:992px) {
 
-  }
+   .footer_text{
+     font-size: 1.1em;
+     line-height: 1.3em;
+     text-align: justify;
+     word-spacing: -2;
 
-  .artist_bio h3{
-    color: white;
-    font-size: 3em;
-    font-family: 'Permanent Marker', cursive;
+   }
+   .img-responsive.jaffar{
+     width: 50%;
+     margin: 0 auto;
+     font-size: 2em;
+   }
 
-  }
-  blockquote{
-    color: white;
-    font-size: 2.0em;
-    text-align: left;
-    word-spacing: 0.1em;
-    font-family: 'Pangolin', cursive
-  }
+   .intro-block h1{
+     font-weight: bold;
+     font-size: 206%;
+     text-align: center;
+     padding: 20px 0px 20px 0px;
+   }
 
+   .intro-block  p{
+     font-size: 150%;
+     line-height: 1.7em;
+     text-align: justify;
+     font-family: 'Permanent Marker', cursive;
+   }
+ }
 
-}
-@media screen and (min-width: 860px){
-  html{
-    font-size: 20px;
-  }
+ /* Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+   intro-block  p{
+     font-size: 250%;
+     line-height: 1.7em;
+     text-align: justify;
+     font-family: 'Permanent Marker', cursive;
+   }
 
-  .artist_bio h3{
-    color: white;
-    font-size: 3em;
-    font-family: 'Permanent Marker', cursive;
-
-  }
-  .intro-block h1{
-    font-size: 2.7em;
-    font-family: 'Great Vibes', cursive;
-
-  }
-
-  blockquote{
-    color: white;
-    font-size: 2.0em;
-    text-align: justify;
-    word-spacing: 0.1em;
-    font-family: 'Pangolin', cursive
-  }
-
-}
-@media screen and (min-width: 920px){
-  html{
-    font-size: 21px;
-  }
-  .social a{
-    padding: 10px;
-    font-size: 1.5em;
-
-  }
-  .artist_bio h3{
-    color: white;
-    font-size: 3em;
-    font-family: 'Permanent Marker', cursive;
-
-  }
-  .caption h1{
-    font-size: 2em;
-    color: white;
-    padding-top: 20px;
-  }
-
-  blockquote{
-    color: white;
-    font-size: 1.0em;
-    text-align: right;
-    word-spacing: 0.1em;
-    font-family: 'Pangolin', cursive
-  }
-}
-@media screen and (min-width: 1000px){
-  html{
-    font-size: 22px;
-  }
-  .t_padding h1{
-    color: white;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2em;
-  }
-  .music_release h1{
-    /*margin-top: 100px;*/
-    font-family: 'Boogaloo', cursive;
-    font-size: 4em;
-
-  }
-}
-
-
-.media_player{
-  padding-top: 6px;
-}
+   .intro-block h1{
+     font-weight: bold;
+     font-size: 250%;
+     text-align: center;
+     padding: 20px 0px 20px 0px;
+   }
+ }
