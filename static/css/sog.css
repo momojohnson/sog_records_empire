@@ -130,7 +130,7 @@ font-family: "Cherry Cream Soda";}
   font-size: 100%;
   line-height: 1.5em;
   text-align: justify;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .intro-block h1{
@@ -202,7 +202,7 @@ footer address h2{
     font-size: 125%;
     line-height: 1.7em;
     text-align: justify;
-     font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans', sans-serif;
   }
  }
 
@@ -233,7 +233,7 @@ footer address h2{
      font-size: 150%;
      line-height: 1.7em;
      text-align: justify;
-     font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans', sans-serif;
    }
  }
 
@@ -243,7 +243,7 @@ footer address h2{
      font-size: 250%;
      line-height: 1.7em;
      text-align: justify;
-     font-family: 'Permanent Marker', cursive;
+     font-family: 'Open Sans', sans-serif;
    }
 
    .intro-block h1{
